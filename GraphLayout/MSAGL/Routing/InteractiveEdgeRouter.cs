@@ -184,18 +184,18 @@ namespace Microsoft.Msagl.Routing {
 
         bool targetIsInsideOfSourceTightPolyline;
         bool sourceIsInsideOfTargetTightPolyline;
-        internal bool UseEdgeLengthMultiplier;
+        public bool UseEdgeLengthMultiplier;
         /// <summary>
         /// if set to true the algorithm will try to shortcut a shortest polyline inner points
         /// </summary>
-        internal bool UseInnerPolylingShortcutting=true;
+        public bool UseInnerPolylingShortcutting=true;
 
         /// <summary>
         /// if set to true the algorithm will try to shortcut a shortest polyline start and end
         /// </summary>
-        internal bool UsePolylineEndShortcutting=true;
+        public bool UsePolylineEndShortcutting=true;
 
-        internal bool AllowedShootingStraightLines = true;
+        public bool AllowedShootingStraightLines = true;
         Dictionary<Corner, Tuple<double,double>> cornerTable;
         bool cacheCorners;
 
